@@ -4,105 +4,312 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我们的恋爱日常</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="hearts-bg"></div>
+    <!-- 开场动画 -->
+    <div class="intro" id="intro">
+        <div class="intro-heart">💕</div>
+        <h2 class="intro-text">我们的故事</h2>
+        <p class="intro-sub">从此刻开始...</p>
+    </div>
 
-    <header>
-        <h1>我们的恋爱日常</h1>
-        <p class="subtitle">记录每一个甜蜜瞬间</p>
-    </header>
+    <!-- 主内容 -->
+    <div class="container" id="main">
+        <!-- Hero 区域 -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="date-badge">
+                    <span class="year">2026</span>
+                    <span class="month">05</span>
+                    <span class="day">27</span>
+                </div>
+                <h1 class="title">恋爱日常</h1>
+                <p class="subtitle">记录每一个心动的瞬间</p>
+                <div class="divider">
+                    <span class="line"></span>
+                    <span class="heart-icon">♥</span>
+                    <span class="line"></span>
+                </div>
+            </div>
+        </section>
 
-    <main class="gallery">
-        <div class="photo-card">
-            <img src="images/微信图片_20260527204927_3197_4.jpg" alt="我们的照片">
-            <div class="photo-overlay">
-                <span class="heart">❤</span>
+        <!-- 照片墙 -->
+        <section class="gallery-section">
+            <div class="section-header">
+                <span class="section-icon">📸</span>
+                <h2>我们的瞬间</h2>
             </div>
-        </div>
-        <div class="photo-card">
-            <img src="images/微信图片_20260527204929_3199_4.jpg" alt="我们的照片">
-            <div class="photo-overlay">
-                <span class="heart">❤</span>
-            </div>
-        </div>
-        <div class="photo-card large">
-            <img src="images/微信图片_20260527204936_3200_4.jpg" alt="我们的照片">
-            <div class="photo-overlay">
-                <span class="heart">❤</span>
-            </div>
-        </div>
-        <div class="photo-card">
-            <img src="images/微信图片_20260527204938_3201_4.jpg" alt="我们的照片">
-            <div class="photo-overlay">
-                <span class="heart">❤</span>
-            </div>
-        </div>
-        <div class="photo-card">
-            <img src="images/微信图片_20260527204941_3202_4.jpg" alt="我们的照片">
-            <div class="photo-overlay">
-                <span class="heart">❤</span>
-            </div>
-        </div>
-        <div class="photo-card">
-            <img src="images/微信图片_20260527204942_3203_4.jpg" alt="我们的照片">
-            <div class="photo-overlay">
-                <span class="heart">❤</span>
-            </div>
-        </div>
-        <div class="photo-card large">
-            <img src="images/微信图片_20260527204944_3204_4.png" alt="我们的照片">
-            <div class="photo-overlay">
-                <span class="heart">❤</span>
-            </div>
-        </div>
-        <div class="photo-card">
-            <img src="images/微信图片_20260527204945_3205_4.png" alt="我们的照片">
-            <div class="photo-overlay">
-                <span class="heart">❤</span>
-            </div>
-        </div>
-        <div class="photo-card">
-            <img src="images/微信图片_20260527204947_3206_4.jpg" alt="我们的照片">
-            <div class="photo-overlay">
-                <span class="heart">❤</span>
-            </div>
-        </div>
-        <div class="photo-card">
-            <img src="images/微信图片_20260527204949_3207_4.jpg" alt="我们的照片">
-            <div class="photo-overlay">
-                <span class="heart">❤</span>
-            </div>
-        </div>
-        <div class="photo-card">
-            <img src="images/微信图片_20260527204950_3208_4.jpg" alt="我们的照片">
-            <div class="photo-overlay">
-                <span class="heart">❤</span>
-            </div>
-        </div>
-        <div class="photo-card large">
-            <img src="images/微信图片_20260527204952_3209_4.jpg" alt="我们的照片">
-            <div class="photo-overlay">
-                <span class="heart">❤</span>
-            </div>
-        </div>
-    </main>
+            <p class="gallery-desc">每一张照片都是爱的见证</p>
 
-    <section class="video-section">
-        <h2>甜蜜视频</h2>
-        <video controls>
-            <source src="images/37e1eb2520c737b9709e149b37e24bd2.mp4" type="video/mp4">
-        </video>
-    </section>
+            <div class="carousel" id="photoCarousel">
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <img src="images/微信图片_20260527204936_3200_4.jpg" alt="美好瞬间">
+                        <div class="slide-caption">最美的时光 💕</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/微信图片_20260527204927_3197_4.jpg" alt="美好瞬间">
+                        <div class="slide-caption">第一次相遇 🌸</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/微信图片_20260527204929_3199_4.jpg" alt="美好瞬间">
+                        <div class="slide-caption">心动的那一天 💗</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/微信图片_20260527204944_3204_4.png" alt="美好瞬间">
+                        <div class="slide-caption">永恒的纪念 🌹</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/微信图片_20260527204938_3201_4.jpg" alt="美好瞬间">
+                        <div class="slide-caption">一起旅行 💖</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/微信图片_20260527204941_3202_4.jpg" alt="美好瞬间">
+                        <div class="slide-caption">温馨日常 🌷</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/微信图片_20260527204949_3207_4.jpg" alt="美好瞬间">
+                        <div class="slide-caption">爱的印记 💝</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/微信图片_20260527204942_3203_4.jpg" alt="美好瞬间">
+                        <div class="slide-caption">甜蜜合影 🌺</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/微信图片_20260527204945_3205_4.png" alt="美好瞬间">
+                        <div class="slide-caption">幸福时光 💘</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/微信图片_20260527204947_3206_4.jpg" alt="美好瞬间">
+                        <div class="slide-caption">甜蜜回忆 🌼</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/微信图片_20260527204950_3208_4.jpg" alt="美好瞬间">
+                        <div class="slide-caption">美好记忆 💓</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/new_photo.jpg" alt="美好瞬间">
+                        <div class="slide-caption">珍贵的回忆 🌻</div>
+                    </div>
+                </div>
+                <button class="carousel-prev">&#8249;</button>
+                <button class="carousel-next">&#8250;</button>
+            </div>
+            <div class="carousel-dots" id="carouselDots"></div>
+        </section>
 
-    <footer>
-        <p>永远爱你 ❤</p>
-    </footer>
+        <!-- 视频区域 -->
+        <section class="video-section">
+            <div class="section-header">
+                <span class="section-icon">🎬</span>
+                <h2>甜蜜视频</h2>
+            </div>
+            <div class="video-wrapper">
+                <video controls poster="images/微信图片_20260527204936_3200_4.jpg">
+                    <source src="images/37e1eb2520c737b9709e149b37e24bd2.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
 
+        <!-- 恋爱故事 -->
+        <section class="story-section">
+            <div class="section-header">
+                <span class="section-icon">📖</span>
+                <h2>恋爱小记</h2>
+            </div>
+            <p class="story-desc">每一篇都是我们的甜蜜回忆</p>
+
+            <div class="story-gallery">
+                <div class="story-card">
+                    <div class="story-title">💕 恋爱小记 1</div>
+                    <div class="story-grid" id="story1Grid"></div>
+                </div>
+                <div class="story-card">
+                    <div class="story-title">💕 恋爱小记 2</div>
+                    <div class="story-grid" id="story2Grid"></div>
+                </div>
+                <div class="story-card">
+                    <div class="story-title">💕 4.30 特别记录</div>
+                    <div class="story-grid" id="story3Grid"></div>
+                </div>
+            </div>
+
+            <!-- 下载文档 -->
+            <div class="download-section">
+                <p>点击下载完整文档查看更多内容</p>
+                <div class="download-buttons">
+                    <a href="documents/恋爱小记2(1).docx" class="download-btn" download>
+                        <span>📥</span> 恋爱小记2
+                    </a>
+                    <a href="documents/恋爱小记(2).docx" class="download-btn" download>
+                        <span>📥</span> 恋爱小记
+                    </a>
+                    <a href="documents/4.30掐我脖子要噶了😭(1).docx" class="download-btn" download>
+                        <span>📥</span> 4.30记录
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 日记留言板 -->
+        <section class="diary-section">
+            <div class="section-header">
+                <span class="section-icon">📝</span>
+                <h2>爱的日记</h2>
+            </div>
+            <p class="diary-desc">每天写下一句话，记录我们的点滴</p>
+
+            <!-- 写日记 -->
+            <div class="diary-write">
+                <div class="today-date">
+                    <span class="date-icon">📅</span>
+                    <span id="todayDate"></span>
+                </div>
+                <form class="diary-form" id="diaryForm">
+                    <textarea name="diaryContent" placeholder="今天想对TA说什么..." rows="4" required></textarea>
+                    <div class="diary-options">
+                        <input type="text" name="author" placeholder="你的名字" class="author-input">
+                        <select name="mood" class="mood-select">
+                            <option value="❤">❤ 心动</option>
+                            <option value="💕">💕 甜蜜</option>
+                            <option value="😊">😊 开心</option>
+                            <option value="🥰">🥰 宠溺</option>
+                            <option value="😘">😘 思念</option>
+                            <option value="✨">✨ 惊喜</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="diary-btn">
+                        <span>✍️</span>
+                        <span>写下今日心情</span>
+                    </button>
+                </form>
+            </div>
+
+            <!-- 日记列表 -->
+            <div class="diary-list" id="diaryList"></div>
+        </section>
+
+        <!-- 投稿区域 -->
+        <section class="submit-section">
+            <div class="section-header">
+                <span class="section-icon">✨</span>
+                <h2>分享你的照片</h2>
+            </div>
+            <p class="submit-desc">把你们的甜蜜瞬间分享给我们</p>
+            <form class="submit-form" id="submitForm">
+                <div class="form-group">
+                    <label>照片链接</label>
+                    <input type="url" name="photoUrl" placeholder="请输入照片的网络链接..." required>
+                </div>
+                <div class="form-group">
+                    <label>照片描述</label>
+                    <input type="text" name="photoCaption" placeholder="给这张照片写一句话...">
+                </div>
+                <div class="form-group">
+                    <label>你的名字</label>
+                    <input type="text" name="senderName" placeholder="留下你的名字...">
+                </div>
+                <div class="form-group">
+                    <label>留言</label>
+                    <textarea name="message" placeholder="想对我们说些什么..." rows="3"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span class="btn-icon">💕</span>
+                    <span>提交照片</span>
+                </button>
+            </form>
+
+            <!-- 提交成功提示 -->
+            <div class="submit-success" id="submitSuccess">
+                <div class="success-icon">✓</div>
+                <h3>提交成功！</h3>
+                <p>感谢你的分享，我们会尽快添加到网站中</p>
+            </div>
+
+            <!-- 提交记录 -->
+            <div class="submitted-photos" id="submittedPhotos">
+                <h3 class="submitted-title">大家分享的照片</h3>
+                <div class="submitted-list" id="submittedList"></div>
+            </div>
+        </section>
+
+        <!-- 爱情清单 -->
+        <section class="wishlist-section">
+            <div class="section-header">
+                <span class="section-icon">💌</span>
+                <h2>爱情清单</h2>
+            </div>
+            <p class="wishlist-desc">我们一起要完成的甜蜜约定</p>
+
+            <!-- 进度条 -->
+            <div class="wishlist-progress">
+                <div class="progress-info">
+                    <span class="progress-label">完成进度</span>
+                    <span class="progress-percent" id="progressPercent">0%</span>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-count">
+                    <span id="completedCount">0</span> / <span id="totalCount">0</span> 项
+                </div>
+            </div>
+
+            <!-- 添加清单 -->
+            <form class="wishlist-form" id="wishlistForm">
+                <input type="text" name="wishItem" placeholder="添加一个我们想一起做的事..." required>
+                <button type="submit" class="add-btn">
+                    <span>✨</span>
+                    <span>添加</span>
+                </button>
+            </form>
+
+            <!-- 清单列表 -->
+            <div class="wishlist-list" id="wishlistList"></div>
+        </section>
+
+        <!-- 尾声 -->
+        <section class="ending">
+            <div class="ending-heart">💕</div>
+            <h2>故事未完待续...</h2>
+            <p>每一天都是新的篇章</p>
+            <div class="promise">
+                <span>♥</span>
+                <span>永远爱你</span>
+                <span>♥</span>
+            </div>
+        </section>
+
+        <!-- 页脚 -->
+        <footer>
+            <p>Made with love · 2026</p>
+        </footer>
+    </div>
+
+    <!-- Lightbox -->
     <div class="lightbox" id="lightbox">
         <span class="close">&times;</span>
         <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <!-- 音乐播放器 -->
+    <div class="music-player" id="musicPlayer">
+        <div class="music-toggle" id="musicToggle">
+            <span class="music-icon">🎵</span>
+            <span class="music-text">多幸运</span>
+        </div>
+        <audio id="bgMusic" loop>
+            <source src="images/001韩安旭 - 多幸运.mp3" type="audio/mpeg">
+        </audio>
+        <div class="music-controls">
+            <button class="play-btn" id="playBtn">▶</button>
+            <div class="progress-bar" id="progressBar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <span class="time" id="currentTime">0:00</span>
+        </div>
     </div>
 
     <script src="script.js"></script>
