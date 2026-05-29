@@ -182,9 +182,6 @@ function addSlideToCarousel(photo) {
     showSlide(currentSlide);
 }
 
-// 页面加载时把已提交的照片加到轮播
-submittedPhotos.forEach(photo => addSlideToCarousel(photo));
-
 // Lightbox 关闭
 document.querySelector('.close').addEventListener('click', closeLightbox);
 
@@ -258,6 +255,9 @@ const submittedList = document.getElementById('submittedList');
 
 // 从 localStorage 加载已提交的照片
 let submittedPhotos = JSON.parse(localStorage.getItem('submittedPhotos') || '[]');
+
+// 页面加载时把已提交的照片加到轮播
+submittedPhotos.forEach(photo => addSlideToCarousel(photo));
 
 // 显示已提交的照片
 function displaySubmittedPhotos() {
